@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela veiculos</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: f4f4f4;
+            color: #222;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        p.descricao {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .imagem-topo {
+            display: block;
+            width: 180px;
+            margin: 0 auto 20px auto;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+        }
+
+        th {
+            border: 1px solid #333;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        thead th {
+            background-color: #dcdcdc;
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tfoot td {
+            background-color: #efefef;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .col-marca {
+            width: 20%;
+        }
+
+        .col-modelo {
+            width: 40%;
+        }
+
+        .col-ano {
+            width: 30%;
+        }
+
+        .imagem-carros {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .imagem-carros img {
+            width: 70px;
+            height: 45px;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        .rodape-imagem {
+            display: block;
+            width: 120px;
+            margin: 25px auto 0 auto;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="imagem-topo" src="../IMG/Lancer evo 2012.jfif" alt="lancer evo 2012">
+        <h1> Tabela de veiculos</h1>
+        <p class="descricao">Tabela de vendas, com as melhores marcas do mercasdo!
+        </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col-marca"></th>
+                        <th class="col-modelo"></th>
+                        <th class="col-ano"></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- carro 1 -->
+                    <tr>
+                        <td rowspan="2">Mitsubishi</td>
+                        <td>
+                            <div class="imagem-carros">
+                                <img src="../IMG/Lancer evo 2012.jfif" alt="Lancer evo 2012">
+                                <span>Lancer</span>
+
+                            </div>
+                        </td>
+                        <td>2012</td>
+                        </td>
+                    </tr>
+
+                    <!-- carro 2 -->
+                    <tr>
+
+                        <td>
+                            <div class="imagem-carros">
+                                <img src="../IMG/Eclipse 1995.webp" alt="Eclipse 1995">
+                                <span>Eclipse</span>
+                            </div>
+                        </td>
+                        <td>1995</td>
+                    </tr>
+
+
+
+                    <!--carro 3  -->
+                    <tr>
+                        <td>Mazda</td>
+                        <td>
+                            <div class="imagem-carros">
+                                <img src="../IMG/Mazda_RX-8 2010.jpg" alt="RX-8 2010">
+                                <span>RX-8</span>
+                            </div>
+
+                        </td>
+                        <td>2010</td>
+                    </tr>
+                    <!--carro 4  -->
+                    <tr>
+                        <td>Audi</td>
+                        <td>
+                            <div class="imagem-carros">
+                                <img src="../IMG/Audi Sport Quattro 1980.jfif" alt="Audi Sport Quattro 1980">
+                                <span>Audi Sport Quattro</span>
+                            </div>
+                        </td>
+                        <td>1986</td>
+                    </tr>
+                    <!--carro 5  -->
+                    <tr>
+                        <td>Nissan</td>
+                        <td>
+                            <div class="imagem-carros">
+                                <img src="../IMG/NISSAN SILVIA S14.webp" alt="NISSAN SILVIA S14">
+                                <span>NISSAN SILVIA S14</span>
+                            </div>
+                        </td>
+                        <td>2010</td>
+                    </tr>
+                    <!--carro 6  -->
+                    <tr>
+                        <td>Chevrolet</td>
+                        <td>
+                            <div class="imagem-carros">
+                                <img src="../IMG/Corvette c3 Stingray 1971.webp" alt="Corvette c3 Stingray 1971">
+                                <span>Corvette c3 Stingray</span>
+                            </div>
+                        </td>
+                        <td>1971</td>
+                    </tr>
+                </tbody>
+
+                <!-- Tfooter rodapé -->
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Ultimas atualizações 24/03/2026</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </marquee>
+        <img class="rodape-imagem" src="../IMG/logo_loja.jpg" alt="Logo da loja">
+    </div>
+</body>
+
+</html>
