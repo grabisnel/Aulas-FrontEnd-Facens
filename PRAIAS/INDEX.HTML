@@ -11,9 +11,9 @@
         <nav class="menu" area-label="Navegação principal">
             <a class="logo" href="#topo">praias do mundo</a>
             <ul class="menu-links">
-                <li><a href="#destinos">Destinos</a></li>
-                <li><a href="#guia">Guia</a></li>
-                <li><a href="#Planeje">Planeje sua viagem</a></li>                
+                <li><a class="botao-primario" href="#destinos">Destinos</a></li>
+                <li><a class="botao-secundario" href="#guia">Guia</a></li>
+                <li><a class="botao-terciario" href="#planeje">Planeje sua viagem</a></li>                
             </ul>
         </nav>
         <!-- fim nav -->
@@ -27,6 +27,7 @@
             <div class="acoes">
                 <a class="botao primario" href="#destinos"> Explorar destino</a>
                 <a class="botao secundario" href="#guia"> Ver referencias</a>
+                <a class="botao terciario" href="#planeje">Planeje sua viagem</a>
                 
             </div>
          </section>
@@ -48,10 +49,11 @@
                 <article class="card">
                     <figure>
                         <img src="./IMG/Ilhas Maldivas.jpg" alt="mar azul, areia clara em maldivas">
-                        <figurecaption>Ilhas Maldivas</figurecaption>
+                        <figcaption>Ilhas Maldivas</figcaption>
                     </figure>
-                    <h3> Praia namorados</h3>
-                    <p> mudar o texto para algo curiosidades sobre maldivas
+                    <h3> Praia paradisiaca</h3>
+                    <p> As ilhas que são preenchidas por resorts costumam ser as privadas, enquanto as que são habitadas pela população são as ilhas nativas.
+                    Você pode se hospedar em ambas. E elas costumam ser muito pequenas e próximas, permitindo que você transite tranquilamente de uma para a outra.
 
                     </p>
                     <p class="destaque-texto">
@@ -64,10 +66,10 @@
                 <article class="card">
                     <figure>
                         <img src="./IMG/Praia Sydney.jpg" alt="mar azul, areia clara em Sydney">
-                        <figurecaption>Sydney</figurecaption>
+                        <figcaption>Sydney</figcaption>
                     </figure>
-                    <h3> Praia namorados</h3>
-                    <p> mudar o texto para algo curiosidades sobre maldivas
+                    <h3> Bondi Beach</h3>
+                    <p> Pode parecer meio doido mas, durante o inverno, a praia de Bondi recebe uma pista de patinação no gelo. Então, se você estiver por aqui durante a estação, não perca a oportunidade única de patinar com vista para o oceano!
 
                     </p>
                     <ul>
@@ -82,16 +84,16 @@
                 <article class="card">
                     <figure>
                         <img src="./IMG/Praia Phi Phi.jfif" alt="mar azul, areia clara em phi phi">
-                        <figurecaption>Praia phi phi</figurecaption>
+                        <figcaption>Ilhas Phi Phi</figcaption>
                     </figure>
-                    <h3> Praia namorados</h3>
-                    <p> mudar o texto para algo curiosidades sobre maldivas
+                    <h3> Praia Maya bay</h3>
+                    <p> Maya Bay ganhou fama mundial após ser o cenário principal do filme "A Praia" (2000), estrelado por Leonardo DiCaprio
 
                     </p>
                     <a class="link-card" href="#planeje">Monte o seu roteiro de viagem</a>
                 </article>
-                <!-- fim card 3 -->
             </div>
+            <!-- fim card 3 -->
         
         <!-- inicio sessão guia -->
         <section class="secao-guia" id="guia">
@@ -129,7 +131,7 @@
                 </p>
                 </article>
 
-                <article class="bloco-guia-destaque-guia">
+                <article class="bloco-guia" id="destaque-guia">
                     <h3>Organização html 5 </h3>
                 <p>
                     A pagina utiliza uma divisão logica do conteudo para deixar o codigo mais limpo, mais legivel e pronto para ampliar com facilidade.
@@ -141,17 +143,17 @@
 
          <!-- inicio sessão planejamento da viagem -->
           <section class="secao-planejamento" id="planeje">
-            <div class="sessao-titulo">
+            <div class="secao-titulo">
                 <p class="rotulo">Interactive content</p>
                 <h2>Monte seu proximo roteiro de viagem</h2>
                 <p> Esse formulario representa a parte interativa da pagina, mostrando como o html 5 tambem organiza entrada de dadis e ações do usuario.</p>
             </div>
           <div class="painel-planejamento">
             <form class="formulario">
-                <label for="praia">praia desejada</label>
-                <input type="text" id="praia" name="praia" placeholder="ex.:praia de marajó">
+                <label for="praia">Praia desejada</label>
+                <input type="text" id="praia" name="praia" placeholder="ex.:Digite a praia de destino">
 
-                <label for="regiao">região do pais escolhido </label>
+                <label for="regiao">Região do país escolhido </label>
                 <select name="regiao" id="regiao">
                     <option>Norte</option>
                     <option>Nordeste</option>
@@ -171,7 +173,7 @@
                 <button type="submit">Simular viagem</button>
             </form>
 
-            <aside class="Dicas">
+            <aside class="dicas">
                 <h3>Dicas Rapidas</h3>
                 <p>
                     Praias em lugares selecionados no mundo que combinam natureza, cultura local e culinarias marcantes.
@@ -183,6 +185,7 @@
                 </ol>
           </div>
           </section>
+          
           <!-- fim da sessão planejamento da viagem -->
            
      </main>
