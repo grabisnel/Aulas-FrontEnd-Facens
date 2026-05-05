@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.CSS">
+    <link rel="stylesheet" href="./BOOTSTRAP/css/bootstrap.min.css">
+    <title>frontend </title>
+</head>
+
+<body>
+    <!--Inicio do Menu-->
+    <header id="header">
+        <a id="logo" href="index.html"> <img src="./IMG/Logo_BringMeHorizon.png" alt=""></a>
+        <nav id="nav">
+            <button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <span id="hamburger"></span>
+
+            </button>
+
+            <ul id="menu" role="menu">
+                <li><a class="link menu" href="./index.html">home</a></li>
+                <li><a class="link menu" href="./quem_somos.html">quem somos</a></li>
+                <li><a class="link menu" href="./produtos.html">produtos</a></li>
+                <li><a class="link menu" href="./videos.html">videos</a></li>
+                <li><a class="link menu" href="./contato.html">contato</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <!--carrosel-->
+
+    <div id="carrouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-pause="none">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="./IMG/imagem1.png" class="d-block w-100" alt="Banner 1">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./IMG/imagem2.webp" class="d-block w-100" alt="Banner 2">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./IMG/imagem3.jpg" class="d-block w-100" alt="Banner 3">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./IMG/imagem4.jpg" class="d-block w-100" alt="Banner 4">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./IMG/imagem5.png" class="d-block w-100" alt="Banner 5">
+            </div>
+        </div>
+
+
+        <button class="carousel-control-prev" data-bs-interval="#carouselExampleInterval" type="button"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true">
+                <span class="visually-hidden">anterior</span>
+            </span>
+        </button>
+        <button class="carousel-control-next" data-bs-interval="#carouselExampleInterval" type="button"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true">
+                <span class="visually-hidden">proximo</span>
+            </span>
+        </button>
+    </div>
+
+
+    <!-- Inicio Banner-->
+    <section class="section-banner-homer" aria-label="chamada principal">
+        <div class="content-fluid">
+            <div class="row m-0">
+                <div class="col-12 col-md-6">
+                    <figure>
+                        <img src="./IMG/banner_principal.webp" alt="Banner:Shows da semana" loading="lazy">
+                    </figure>
+                    <main class="col-12 col-md-6">
+                        <section class="texto-banner d-none d-md-block" aria-label="mensagem Principal">
+                            <h1>conheça os locais do proximos shows</h1>
+                            <p class=" d-none d-md-block">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, repudiandae obcaecati
+                                atque nihil harum ab ratione animi quo adipisci, quos est dolore cum nobis! Laudantium
+                                nobis doloribus ratione eligendi! Quos.
+                            </p>
+                            <a href="#" aria-label="Saiba mais sobre"></a>
+                        </section>
+
+                        <!--inicio destaque-->
+                        <section class="destaque" aria-label="Coleções de albuns">
+                            <div class="container">
+                                <div class="row d-flex justify-content-center">
+                                    <header class="col-12">
+                                        <h2> Conheça os albuns já lançados</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus a ex ullam
+                                            eum sapiente quae delectus, libero cum dolores perferendis officia aliquam
+                                            quam ratione inventore vel? Cum voluptas ad repellendus!
+                                        </p>
+                                    </header>
+                                    <!-- Objeto 1 -->
+                                    <div class="col-6 col-md-2 pr-0">
+                                        <figure>
+                                            <a href="./produtos.html" aria-label="Veja mais detalhes de cada album">
+                                                <img src="./IMG/Destaque_1.jpg" alt="album that's the spirit"
+                                                    width="100%" loading="lazy">
+                                            </a>
+                                            <figcaption>album <br> That's the spirit | 2015</figcaption>
+                                        </figure>
+                                    </div>
+                                    <!-- objeto 2 -->
+                                    <div class="col-6 col-md-2 pr-0">
+                                        <figure>
+                                            <a href="./produtos.html" aria-label="Veja mais detalhes de cada album">
+                                                <img src="./IMG/Destaque_2.jpg" alt="POST HUMAN: Survival Horror"
+                                                    width="100%" loading="lazy">
+                                            </a>
+                                            <figcaption>album <br> POST HUMAN: Survival Horror | 2020</figcaption>
+                                        </figure>
+                                    </div>
+                                    <!-- objeto 3 -->
+                                    <div class="col-6 col-md-2 pr-0">
+                                        <figure>
+                                            <a href="./produtos.html" aria-label="Veja mais detalhes de cada album">
+                                                <img src="./IMG/Destaque_3.jpg" alt="POST HUMAN: NeX Gen" width="100%"
+                                                    loading="lazy">
+                                            </a>
+                                            <figcaption>album <br> POST HUMAN: NeX Gen | 2024</figcaption>
+                                        </figure>
+                                    </div>
+                                    <!-- objeto 4 -->
+                                    <div class="col-6 col-md-2 pr-0">
+                                        <figure>
+                                            <a href="./produtos.html" aria-label="Veja mais detalhes de cada album">
+                                                <img src="./IMG/Destaque_4.jpg" alt="AMO" width="100%" loading="lazy">
+                                            </a>
+                                            <figcaption>album <br> AMO | 2019</figcaption>
+                                        </figure>
+                                    </div>
+                                    <!-- objeto 5 -->
+                                    <div class="col-6 col-md-2 pr-0">
+                                        <figure>
+                                            <a href="./produtos.html" aria-label="Veja mais detalhes de cada album">
+                                                <img src="./IMG/Destaque_5.jpg" alt="Sempiternal" width="100%"
+                                                    loading="lazy">
+                                            </a>
+                                            <figcaption>album <br> Sempiternal | 2013</figcaption>
+                                        </figure>
+                                    </div>
+                                    <!-- objeto 6 -->
+                                    <div class="col-6 col-md-2 pr-0">
+                                        <figure>
+                                            <a href="./produtos.html" aria-label="Veja mais detalhes de cada album">
+                                                <img src="./IMG/Destaque_6.jpg" alt="Suicide Season" width="100%"
+                                                    loading="lazy">
+                                            </a>
+                                            <figcaption>album <br> Suicide Season | 2008</figcaption>
+                                        </figure>
+                                    </div>
+
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <a id="Saiba mais" href="./produtos.html"
+                                            aria-label="ir para pagina de produtos">saiba mais</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                        <!--fim destaque-->
+
+
+                        <!--Inicio novidade-->
+                        <section class="novidades" id="novidades-mobile" aria-label="novidades">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <section class="text-body" aria-label="texto de novidades">
+                                            <h2>Conheça as novidades da banda Bring Me Horizon </h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel reiciendis
+                                                reprehenderit temporibus. Ex, ullam accusantium atque rem adipisci
+                                                suscipit aperiam. Dolor officia tempora sequi libero nesciunt veritatis
+                                                sint repellat eum!
+                                            </p> <a class="btn-banner" href="#" target="_blank" rel="nooper noreferrer">saiba mais</a>
+                                        </section>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <figure>
+                                            <img class="img-fluid" src="./IMG/Novidades.jfif" alt="Banner: Novidades sobre a banda" loading="lazy">
+                                            <!-- Não achei essa imagem como jpg -->
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                        <!-- Fim novidades -->
+
+                        <!-- inicio galeria -->
+                        <section class="galeria d-flex align-itens-center" aria-label="galeria de Imagens">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <Section class="texto-galeria" aria-label="Introdução da galeria">
+                                            <h2>Conheça nossa Galeria de shows</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit error maiores suscipit tempore eligendi officia autem voluptatem iusto sit amet eum, atque numquam delectus at quia quos voluptates velit animi.
+                                            </p>
+                                        </Section>
+                                    </div>
+                                    <!-- Inicio Imagem 1 -->
+                                    <div class="gallery col-6 col-md-3">
+                                        <img src="./img/galeria-1.jpg" class="img-fluid" alt="imagem da galeria 1" loading="lazy">
+                                    </div>
+                                    <!-- Fim Imagem 1 -->
+                                     <!-- Inicio Imagem 2 -->
+                                    <div class="gallery col-6 col-md-3">
+                                        <img src="./img/galeria-2.jpg" class="img-fluid" alt="imagem da galeria 2" loading="lazy">
+                                    </div>
+                                    <!-- Fim Imagem 2 -->
+                                     <!-- Inicio Imagem 3 -->
+                                    <div class="gallery col-6 col-md-3">
+                                        <img src="./img/galeria-3.jpg" class="img-fluid" alt="imagem da galeria 3" loading="lazy">
+                                    </div>
+                                    <!-- Fim Imagem 3 -->
+                                     <!-- Inicio Imagem 4 -->
+                                    <div class="gallery col-6 col-md-3">
+                                        <img src="./img/galeria-4.jpg" class="img-fluid" alt="imagem da galeria 4" loading="lazy">
+                                    </div>
+                                    <!-- Fim Imagem 4 -->
+                                     <!-- Inicio Imagem 5 -->
+                                    <div class="gallery col-6 col-md-3">
+                                        <img src="./img/galeria-5.jpg" class="img-fluid" alt="imagem da galeria 5" loading="lazy">
+                                    </div>
+                                    <!-- Fim Imagem 5 -->
+                                     <!-- Inicio Imagem 6 -->
+                                    <div class="gallery col-6 col-md-3">
+                                        <img src="./img/galeria-6.jpg" class="img-fluid" alt="imagem da galeria 6" loading="lazy">
+                                    </div>
+                                    <!-- Fim Imagem 6 -->
+                                     <!-- Inicio Imagem 7 -->
+                                    <div class="gallery col-6 col-md-3">
+                                        <img src="./img/galeria-7.jpg" class="img-fluid" alt="imagem da galeria 7" loading="lazy">
+                                    </div>
+                                    <!-- Fim Imagem 7 -->
+                                     <!-- Inicio Imagem 8 -->
+                                    <div class="gallery col-6 col-md-3">
+                                        <img src="./img/galeria-8.jpg" class="img-fluid" alt="imagem da galeria 8" loading="lazy">
+                                    </div>
+                                    <!-- Fim Imagem 8 -->
+                                     <!-- Inicio Imagem 9 -->
+                                    <div class="gallery col-6 col-md-3">
+                                        <img src="./img/galeria-9.jpg" class="img-fluid" alt="imagem da galeria 9" loading="lazy">
+                                    </div>
+                                    <!-- Fim Imagem 9 -->
+                                     <!-- Inicio Imagem 10 -->
+                                    <div class="gallery col-6 col-md-3">
+                                        <img src="./img/galeria-10.jpg" class="img-fluid" alt="imagem da galeria 10" loading="lazy">
+                                    </div>
+                                    <!-- Fim Imagem 10 -->
+                                     <!-- Inicio Imagem 11 -->
+                                    <div class="gallery col-6 col-md-3">
+                                        <img src="./img/galeria-11.jpg" class="img-fluid" alt="imagem da galeria 11" loading="lazy">
+                                    </div>
+                                    <!-- Fim Imagem 11 -->
+                                     <!-- Inicio Imagem 12 -->
+                                    <div class="gallery col-6 col-md-3">
+                                        <img src="./img/galeria-12.webp" class="img-fluid" alt="imagem da galeria 12" loading="lazy">
+                                    </div>
+                                    <!-- Fim Imagem 12 -->
+                                     <!-- ao todo temos 12 imagens dentro do objeto galeria -->
+
+                                </div>
+                            </div>
+                        </section>
+                        <!-- fim da galeria -->
+                         <!-- whats! botão flutuante -->
+                          <aside class="whatsapp" aria-label="Contato via whatsapp">
+                            <div class="container-grid logo-whats">
+                                <a href="https://wa.me/5515988126591" target="_blank" rel="nooper noreferrer" aria-label="abrir conversa no whatsapp">
+                                    <img class="pulse" src="./img/logo_whatsapp.png" alt="icone do whatsapp">
+                                </a>
+                            </div>
+                          </aside>
+                        </main>
+                        <!-- Fim do conteu -->
+</body>
+<script type="text/javascript" src="./BOOTSTRAP/js/bootstrap.min.js"></script>
+
+</html>
