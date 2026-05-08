@@ -1,54 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@400;500;700&display=swap');
 
-:root{
-    --areia:#f3e7c9;
-    --espuma:#fffaf1;
-    --oceano:#0a5c78;
-    --oceano-profundo:#073b4c;
-    --turquesa:#16a6b6;
-    --sol:#f5a623;
-    --coral:#eb6f4d;
-    --texto:#13313f;
-    --texto-suave:#4f6c77;
-    --borda:rgba(7, 59, 76, 0.12);
-    --sombra:rgba(7, 59, 76, 0.16);
+:root {
+    --areia: #f3e7c9;
+    --espuma: #fffaf1;
+    --oceano: #0a5c78;
+    --oceano-profundo: #073b4c;
+    --turquesa: #16a6b6;
+    --sol: #f5a623;
+    --coral: #eb6f4d;
+    --texto: #13313f;
+    --texto-suave: #4f6c77;
+    --borda: rgba(7, 59, 76, 0.12);
+    --sombra: rgba(7, 59, 76, 0.16);
 }
-*{box-sizing: border-box;
+
+* {
+    box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     margin: 0;
     font-family: 'Manrope', sans-serif;
-    /* instalar fontes com o google API's para a proxima aula > manrope */
     color: var(--texto);
-    background: radial-gradient(circle at top right, rgba(245,166,35,0.18),transparent 18%,linear-gradient(180deg, rgba(#f6fbfc 0%,#eef7f8 35%,#fff9f1 100%)));
+    background-color: #f6fbfc;
 }
-img{
+
+img {
     display: block;
     width: 100%;
 }
-a{
+
+a {
     color: inherit;
 }
-.hero{
-    width: 100vw;
-    padding: 1.5rem 6vh 4rem;
-    background: linear-gradient(rgba(7,59,76,0.92),rgba(22, 166, 182, 0.68)), url(https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1600&q=80) center/cover;
-    color: #ffff;
-    }
 
-.menu{
-    display:flex;
+/* ── PÁGINA 1 – HERO ── */
+
+.hero {
+    width: 100vw;
+    padding: 1.5rem 6vw 4rem;
+    background: linear-gradient(rgba(7, 59, 76, 0.92), rgba(22, 166, 182, 0.68)),
+                url(https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1600&q=80) center/cover;
+    color: #fff;
+}
+
+.menu {
+    display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
     flex-wrap: wrap;
 }
 
-.logo{
-    font-family: 'fraunces,sans-serif';
+.logo {
+    font-family: 'Fraunces', sans-serif;
     font-size: 1.4rem;
     font-weight: bold;
     text-decoration: none;
@@ -61,12 +70,14 @@ a{
     margin: 0;
     padding: 0;
 }
+
 .menu-links a {
     text-decoration: none;
     padding: 0.6rem 0.95rem;
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.12);
 }
+
 .hero-conteudo {
     max-width: 720px;
     padding: 12vh 0 0;
@@ -79,34 +90,37 @@ a{
     font-size: 0.78rem;
     font-weight: 700;
 }
+
 .hero,
 .secao h2,
 .bloco-guia h3,
-.dicas h3{
-    font-family: 'fraunces', sans-serif;
+.dicas h3 {
+    font-family: 'Fraunces', sans-serif;
 }
 
-.hero h1{
+.hero h1 {
     margin: 0.5rem 0 1rem;
     font-size: clamp(2.7rem, 6vh, 5.2rem);
-    /*Clamp para definir um tamanho de fonte que escala responsivamente a função */
     line-height: 0.95;
 }
 
-.descricao{
+.descricao {
     max-width: 58ch;
     font-size: 1.1rem;
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.88);
 }
-.acoes{
+
+.acoes {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
     margin-top: 2rem;
 }
+
 .botao-primario,
-.botao-secundario,.botao-terciario{
+.botao-secundario,
+.botao-terciario {
     display: inline-block;
     padding: 0.95rem 1.4rem;
     border-radius: 999px;
@@ -114,21 +128,27 @@ a{
     text-decoration: none;
 }
 
-.botao-primario{
+.botao-primario {
     background: var(--sol);
-    
-    color: #08212c;
+    color: var(--oceano-profundo);
 }
 
-.botao-secundario{
-    border: 1px solid var(rgba(255, 255, 255, 0.4));
+.botao-secundario {
+    border: 1px solid rgba(255, 255, 255, 0.4);
     background: rgba(255, 255, 255, 0.1);
 }
 
-.secao-titulo{
+/* ── SEÇÃO DESTINOS ── */
+
+.secao {
+    padding: 3rem 6vw;
+}
+
+.secao-titulo {
     max-width: 760px;
     margin-bottom: 2.4rem;
 }
+
 .secao h2 {
     margin: 0.35rem 0 0.8rem;
     font-size: clamp(2rem, 4vw, 3.4rem);
@@ -141,19 +161,20 @@ a{
 .dicas p,
 .formulario label,
 .rodape p,
-li{
+li {
     line-height: 1.7;
 }
-.cards{
+
+.cards {
     display: grid;
-    grid-template-columns:repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.5rem;
 }
 
 .card,
 .bloco-guia,
-.painel-planejamento{
-    background: var(--sombra);
+.painel-planejamento {
+    background: var(--espuma);
     border: 1px solid var(--borda);
     border-radius: 28px;
 }
@@ -162,7 +183,7 @@ li{
     overflow: hidden;
 }
 
-.card figure{
+.card figure {
     margin: 0;
 }
 
@@ -180,37 +201,35 @@ li{
 .card h3,
 .card p,
 .card ul,
-.link-card{
+.link-card {
     margin-left: 1.4rem;
     margin-right: 1.4rem;
 }
 
-.card h3{
+.card h3 {
     margin-top: 1.6rem;
     margin-bottom: 0.8rem;
     font-size: 1.65rem;
 }
 
 .card ul {
-    padding-left: 12rem;
+    padding-left: 1.2rem;
 }
 
-.destaque-texto{
-    color: var(  --oceano-profundo);
+.destaque-texto {
+    color: var(--oceano-profundo);
 }
 
 .link-card {
     display: inline-block;
     margin-bottom: 1.6rem;
     font-weight: 700;
-    color:var(--coral);
-}
-.guia {
-    background: linear-gradient(180deg,rgba(22, 166, 182, 0.08), rgba(255, 250, 241, 0.7)),
-    linear-gradient(90deg,rgba(22, 166, 182, 0.45), rgba(255, 250, 241, 0.2 ));
+    color: var(--coral);
 }
 
-.grade-guia{
+/* ── SEÇÃO GUIA ── */
+
+.grade-guia {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.2rem;
@@ -227,19 +246,22 @@ li{
 }
 
 .destaque-guia {
-    background: linear-gradient(160deg,rgba(10,92,120,0.95)rgba(22,166,182,0.8))
+    background: linear-gradient(160deg, rgba(10, 92, 120, 0.95), rgba(22, 166, 182, 0.8));
+    color: #fff;
 }
 
 .destaque-guia code {
-    color: #ffff;
+    color: #fff;
 }
 
 code {
     padding: 0.15rem 0.4rem;
     border-radius: 8px;
     background-color: rgba(7, 59, 120, 0.6);
-    font-family:  consolas, monospace;
+    font-family: consolas, monospace;
 }
+
+/* ── SEÇÃO PLANEJAMENTO ── */
 
 .painel-planejamento {
     display: grid;
@@ -254,17 +276,17 @@ code {
 
 .formulario input,
 .formulario select {
-    background: #ffff;
+    background: #fff;
 }
 
 .formulario button {
-    background:var(--oceano);
-    color: #ffff;
+    background: var(--oceano);
+    color: #fff;
     font-weight: 700;
     cursor: pointer;
 }
 
-.dicas{
+.dicas {
     padding: 0.4rem 0.4rem 0.4rem 0;
 }
 
@@ -273,407 +295,402 @@ code {
     font-size: 1.5rem;
 }
 
+/* ── RODAPÉ ── */
+
 .rodape {
-    padding:  2rem 6vw 3rem;
+    padding: 2rem 6vw 3rem;
     color: var(--texto-suave);
 }
-/*tratando css ambiente mobile */
+
+/* ── RESPONSIVO PÁGINA 1 ── */
 
 @media (max-width: 980px) {
     .cards,
     .grade-guia,
-    .painel-planejamento{
+    .painel-planejamento {
         grid-template-columns: 1fr;
     }
 
-    .hero{
+    .hero {
         min-height: auto;
         padding-bottom: 3rem;
     }
-    
- }
+}
 
- @media (max-width: 640px) {
-    .menu{
+@media (max-width: 640px) {
+    .menu {
         flex-direction: column;
         align-items: flex-start;
-         }
+    }
 
     .menu-links {
         flex-wrap: wrap;
     }
-    .hero-conteudo{
+
+    .hero-conteudo {
         padding-top: 4rem;
     }
+
     .secao,
     .hero,
     .rodape {
         padding-left: 1.2rem;
         padding-right: 1.2rem;
     }
+}
 
-    }
+/* ── PÁGINA 2 ── */
 
-    /*segunda pagina hero */
+.hero-secundario {
+    background: linear-gradient(135deg, rgba(7, 59, 76, 0.88), rgba(235, 111, 77, 0.45)),
+                url("https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?auto=format&fit=crop&w=1600&q=80") center/cover;
+}
 
-    .hero-secundario{
-        background:linear-gradient(135deg, rgba(7,59,76,0.88),rgba(235,111,77,0.45), url("https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?auto=format&fit=crop&w=1600&q=80") center/cover);
-    }
+.grade-definicoes,
+.grade-recursos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2rem;
+}
 
-    /* grades e cartoes */
+.card-definicao,
+.recurso,
+.quadro-info,
+.bloco-explicacao {
+    background: #fff;
+    border: 1px solid var(--borda);
+    border-radius: 28px;
+    box-shadow: 0 2px 8px var(--sombra);
+}
 
+.card-definicao,
+.recurso,
+.bloco-explicacao {
+    padding: 1.5rem;
+}
+
+.card-definicao h3,
+.recurso h3,
+.coluna-info h3,
+.bloco-explicacao h3 {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    font-family: 'Fraunces', sans-serif;
+    font-size: 1.35rem;
+}
+
+.destaque-definicao {
+    background: linear-gradient(160deg, rgba(235, 111, 77, 0.92), rgba(245, 166, 35, 0.82));
+    color: #fff;
+}
+
+.destaque-definicao code {
+    color: #fff;
+}
+
+.secao-suave {
+    background: linear-gradient(180deg, rgba(243, 231, 201, 0.45), rgba(22, 166, 182, 0.05));
+}
+
+.quadro-info,
+.painel-duplo {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 1.4rem;
+}
+
+.quadro-info {
+    padding: 1.5rem;
+}
+
+.coluna-info {
+    padding: 0.4rem;
+}
+
+.lista-tags {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.7rem;
+    padding-left: 1.2rem;
+}
+
+.formulario-avancado textarea {
+    width: 100%;
+    padding: 0.95rem;
+    border-radius: 16px;
+    border: 1px solid var(--borda);
+    font: inherit;
+    resize: vertical;
+}
+
+.grupo-botoes {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.grupo-botoes button {
+    flex: 1 1 220px;
+}
+
+.botao-alternativo {
+    background: var(--coral) !important;
+}
+
+.painel-detalhes {
+    border: 1px solid var(--borda);
+    border-radius: 18px;
+    padding: 1rem;
+    background: rgba(22, 166, 182, 0.05);
+}
+
+.painel-detalhes summary {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.bloco-editavel {
+    min-height: 130px;
+    padding: 1rem;
+    border: 2px solid rgba(10, 92, 120, 0.35);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.area-drag {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cartao-arrastavel,
+.alvo-drop {
+    min-height: 110px;
+    padding: 1rem;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.cartao-arrastavel {
+    background: linear-gradient(160deg, rgba(10, 92, 120, 0.9), rgba(22, 166, 182, 0.75));
+    color: #fff;
+    cursor: grab;
+}
+
+.cartao-arrastavel.arrastando {
+    opacity: 0.55;
+    cursor: grabbing;
+}
+
+.alvo-drop {
+    border: 2px dashed rgba(235, 111, 77, 0.45);
+    background: rgba(243, 231, 201, 0.55);
+    align-content: start;
+    gap: 0.8rem;
+}
+
+.alvo-drop.drop-ativo {
+    border-color: var(--oceano);
+    background: rgba(22, 166, 182, 0.14);
+    transform: scale(1.01);
+}
+
+.titulo-drop {
+    margin: 0;
+    font-weight: 700;
+    color: var(--oceano-profundo);
+}
+
+.campo-revisao {
+    width: 100%;
+    padding: 0.95rem 1rem;
+    border-radius: 16px;
+    border: 1px solid var(--borda);
+    font: inherit;
+}
+
+.barra-ferramentas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.menu-demo {
+    display: grid;
+    gap: 1rem;
+}
+
+.menu-acoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.menu-acoes button,
+.barra-ferramentas button {
+    padding: 0.85rem 1.1rem;
+    border: 0;
+    border-radius: 999px;
+    background: rgba(7, 59, 76, 0.16);
+    color: var(--oceano-profundo);
+    font: inherit;
+    font-weight: 700;
+}
+
+.menu-acoes button {
+    background: rgba(235, 111, 77, 0.14);
+    color: #7a341f;
+}
+
+.painel-toolbar {
+    padding: 1.1rem 1.2rem;
+    border-radius: 20px;
+    border: 1px solid var(--borda);
+    background: rgba(255, 250, 241, 0.82);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.painel-legenda {
+    margin: 0 0 0.45rem;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14rem;
+    color: var(--texto-suave);
+}
+
+.painel-toolbar p:last-child {
+    margin: 0;
+}
+
+.painel-toolbar.modo-normal {
+    background: rgba(255, 255, 255, 0.82);
+}
+
+.painel-toolbar.modo-destaque {
+    background: rgba(245, 166, 35, 0.2);
+    transform: scale(1.01);
+}
+
+.painel-toolbar.modo-compacto {
+    background: rgba(22, 166, 182, 0.12);
+    max-width: 28rem;
+}
+
+/* ── RESPONSIVO PÁGINA 2 ── */
+
+@media (max-width: 980px) {
     .grade-definicoes,
-    .grade-recursos{
-        display: grid;
-        grid-template-columns: repeat(3,minmax(0,1fr));
-        gap: 1.2rem;
-    }
-
-    .card-definicao,
-    .recurso,
+    .grade-recursos,
     .quadro-info,
-    .bloco-explicacao{
-        background: rgb(255, 255, 255);
-        border: 1px solid var(--borda);
-        border-radius: 28px;
-        box-shadow: var(--sombra);
+    .painel-duplo,
+    .area-drag,
+    .lista-tags {
+        grid-template-columns: 1fr;
     }
+}
 
-    .card-definicao,
-    .recurso,
-    .bloco-explicacao{
-        padding: 1.5rem;
-    }
+/* ── PÁGINA 3 – MÍDIAS ── */
+/* nome: Alexander Fernandes  RA: 251070 | 05/05/2026 */
 
-    .card-definicao h3,
-    .recurso h3,
-    .coluna-info h3,
-    .bloco-explicacao h3{
-        margin-top: 0;
-        margin-bottom: 0.8rem;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 1.35rem;
-    }
+.hero-midias {
+    background: linear-gradient(135deg, rgba(7, 59, 76, 0.92), rgba(235, 111, 77, 0.55)),
+                url('https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1600&q=80') center/cover;
+}
 
-    .destaque-definicao{
-        background: linear-gradient(160deg, rgba(235,111,77,0.92),rgba(245,166,35,0.82));
-        color: #ffff;
-    }
+.grade-midias {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
 
-    .destaque-definicao code {
-        color: #ffff;
-    }
+.bloco-midia {
+    background: var(--espuma);
+    border: 1px solid var(--borda);
+    border-radius: 20px;
+    padding: 1.5rem;
+    overflow: hidden;
+}
 
-    .secao-suave {
-        background: linear-gradient(180deg, rgba(243,231,201,0.45),rgba(255,255,255,0.05)),
-        linear-gradient(180deg, rgba(255,255,255,025),rgba(22,166,182,0.05));
-    }
+.bloco-midia-largo {
+    grid-column: span 2;
+}
 
-    .quadro-info,
-    .painel-duplo{
-        display: grid;
-        grid-template-columns: 0.8fr 1.2fr;
-        gap: 1.4rem;
-    }
+.bloco-midia h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: 'Fraunces', sans-serif;
+    font-size: 1.35rem;
+    color: var(--oceano-profundo);
+}
 
-    .quadro-info {
-        padding: 1.5rem;
-    }
+audio {
+    width: 100%;
+    margin: 0.8rem 0;
+    border-radius: 999px;
+    accent-color: var(--turquesa);
+}
 
-    .coluna-info {
-        padding: 0.4rem;
-    }
+video {
+    width: 100%;
+    border-radius: 16px;
+    display: block;
+}
 
-    .lista-tags{
-        display: grid;
-        grid-template-columns: repeat(2,minmax(0, 1fr));
-        gap: 0.7rem;
-        padding-left: 1.2rem;   
-    }
+.video-embed {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 16px;
+}
 
-    /* segunda pagina formulario */
-    .formulario-avancado textarea {
-        width: 100%;
-        padding: 0.95rem;
-        border-radius: 16px;
-        border: 1px solid rgba(7, 59, 76, 0.16);
-        font: inherit;
-        resize: vertical;
-    }
+.video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 
-    .grupo-botoes {
-        display: flex;
-        gap: 0.8rem;
-        flex-wrap: wrap;
-    }
+.bloco-codigo {
+    background: var(--oceano-profundo);
+    color: #cfe8f0;
+    border-radius: 16px;
+    padding: 1.5rem;
+    font-family: consolas, monospace;
+    font-size: 0.88rem;
+    overflow-x: auto;
+    white-space: pre;
+    line-height: 1.7;
+}
 
-    .grupo-botoes button{
-        flex: 1 1 220px;
-    }
+.nota-midia {
+    border-left: 4px solid var(--turquesa);
+    padding: 0.9rem 1.2rem;
+    background: rgba(22, 166, 182, 0.08);
+    border-radius: 0 12px 12px 0;
+    margin: 1rem 0;
+}
 
-    .botao-alternativo {
-        background: var(--coral) !important;
-    }
+.nota-midia p {
+    margin: 0;
+    color: var(--oceano-profundo);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
 
-    /* segunda pagina com recursos html5 e css avançado */
+/* ── RESPONSIVO PÁGINA 3 ── */
 
-    .painel-detalhes {
-        border: 1px solid rgba(7, 59, 76, 0.14);
-        border-radius: 18px;
-        padding: 1rem;
-        background: rgb(22, 166, 182, 0.05);
-    }
-
-    .painel-detalhes summary {
-        cursor: pointer;
-        font-weight: 700;
-    }
-
-    .bloco-editavel{ 
-        min-height: 130px;
-        padding: 1rem;
-        border: 2px solid rgba(10, 92, 120, 0.35);
-        background: rgba(255, 255, 255, 0.8);
-    }
-
-    .area-drag {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-        margin-top: 1rem;
-    }
-
-    .cartao-arrastavel,
-    .alvo-drop{
-        min-height: 110px;
-        padding: 1rem;
-        border-radius: 20px;
-        display: grid;
-        place-items: center;
-        text-align: center;
-    }
-
-    .cartao-arrastavel{
-        background: linear-gradient(160deg,rgba(10,92,12,0.9),rgba(22,166,182,0.75));
-        color: #ffff;
-        cursor: grab;
-    }
-
-    .cartao-arrastavel.arrastando {
-        opacity: 0.55;
-        cursor: grabbing;
-    }
-
-    .alvo-drop {
-        border: 2px dashed rgba(235,111,77,0.45);
-        background: rgba(243, 231, 201, 0.55);
-        align-content: start;
-        gap: 0.8rem;
-    }
-
-    .alvo-drop.drop-ativo {
-        border-color: var(--oceano);
-        background: rgba(22,166,182,0.14);
-        transform: scale(1.01);
-    }
-
-    .titulo-drop {
-        margin: 0;
-        font-weight: 700;
-        color: var(--oceano-profundo);
-    }
-
-    .campo-revisao {
-        width: 100%;
-        padding: 0.95rem 1rem;
-        border-radius: 16px;
-        border: 1px solid rgba(7, 59, 76, 0.16);
-        font: inherit;
-    }
-
-    .barra-ferramentas{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.8rem;
-        margin-top: 1rem;
-    }
-
-    .menu-demo {
-        display: grid;
-        gap: 1rem;
-
-    }
-
-    .menu-acoes {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.8rem;
-    }
-
-    .menu-acoes button,
-    .barra-ferramentas button {
-        padding: 0.85rem 1.1rem;
-        border: 0;
-        border-radius: 999px;
-        background: rgba(7, 59, 76, 0.16);
-        color: var(--oceano-profundo);
-        font: inherit;
-        font-weight: 700;
-    }
-
-    .menu-acoes button {
-        background: rgba(235, 111, 77, 0.14);
-        color:#7a341f;
-    }
-
-    .painel-toolbar {
-        padding: 1.1rem 1.2rem;
-        border-radius: 20px;
-        border: 1px solid rgba(7, 59, 76, 0.14);
-        background: rgba(255, 250, 241, 0.82 );
-        transition: background-color 0.2s ease, transform 0.2s ease;
-    }
-
-    .painel-legenda {
-        margin: 0 0 0.45rem;
-        font-size: 0.82rem;
-        text-transform: uppercase;
-        letter-spacing: 0.14rem;
-        color: var(--texto-suave);
-    }
-
-    .painel-toolbar p:last-child{
-        margin: 0;
-    }
-
-    .painel-toolbar.modo-normal{
-        background: rgba(255, 255, 250, 0.82);
-    }
-    .painel-toolbar.modo-destaque{
-        background: rgba(245, 166, 35, 0.2);
-        transform: scale(1.01);
-    }
-
-    .painel-toolbar.modo-compacto{
-        background: rgba(22,166,182,0.12);
-        max-width: 28rem;
-    }
-
-
-    @media(max-width: 980px) {
-        .grade-definicoes,
-        .grade-recursos,
-        .quadro-info,
-        .painel-duplo,
-        .area-drag,
-        .lista-tags{
-            grid-template-columns: 1fr;
-        }
- }
-
- /* inicio terceira pagina medias */
- /* nome: Alexander Fernandes  RA: 251070 | 05/05/2026  */
-
-    /* 8 - hero pagina 3 */
-    .hero-midias {
-        background: linear-gradient(135deg, rgba(7,59,76,0.92), rgba(235,111,77,0.55)),
-                    url('https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1600&q=80') center/cover;
-    }
-
-    /* 9 - grade de midias */
+@media (max-width: 980px) {
     .grade-midias {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 1.5rem;
-    }
-
-    .bloco-midia {
-        background: var(--espuma);
-        border: 1px solid var(--borda);
-        border-radius: 20px;
-        padding: 1.5rem;
-        overflow: hidden;
+        grid-template-columns: 1fr;
     }
 
     .bloco-midia-largo {
-        grid-column: span 2;
+        grid-column: span 1;
     }
-
-    .bloco-midia h3 {
-        margin-top: 0;
-        margin-bottom: 1rem;
-        font-family: 'Fraunces', sans-serif;
-        font-size: 1.35rem;
-        color: var(--oceano-profundo);
-    }
-
-    /* 10 - audio */
-    audio {
-        width: 100%;
-        margin: 0.8rem 0;
-        border-radius: 999px;
-        accent-color: var(--turquesa);
-    }
-
-    /* 11 - video e embed */
-    video {
-        width: 100%;
-        border-radius: 16px;
-        display: block;
-    }
-
-    .video-embed {
-        position: relative;
-        padding-bottom: 56.25%;
-        height: 0;
-        overflow: hidden;
-        border-radius: 16px;
-    }
-
-    .video-embed iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: 0;
-    }
-
-    /* 12 - bloco de codigo */
-    .bloco-codigo {
-        background: var(--oceano-profundo);
-        color: #cfe8f0;
-        border-radius: 16px;
-        padding: 1.5rem;
-        font-family: consolas, monospace;
-        font-size: 0.88rem;
-        overflow-x: auto;
-        white-space: pre;
-        line-height: 1.7;
-    }
-
-    /* 13 - nota de midia */
-    .nota-midia {
-        border-left: 4px solid var(--turquesa);
-        padding: 0.9rem 1.2rem;
-        background: rgba(22, 166, 182, 0.08);
-        border-radius: 0 12px 12px 0;
-        margin: 1rem 0;
-    }
-
-    .nota-midia p {
-        margin: 0;
-        color: var(--oceano-profundo);
-        font-size: 0.95rem;
-        line-height: 1.6;
-    }
-
-    /* responsivo pagina 3 */
-    @media (max-width: 980px) {
-        .grade-midias {
-            grid-template-columns: 1fr;
-        }
-        .bloco-midia-largo {
-            grid-column: span 1;
-        }
-    }
+}
