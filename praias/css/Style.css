@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@400;500;700&display=swap');
+
 :root{
     --areia:#f3e7c9;
     --espuma:#fffaf1;
@@ -18,7 +20,7 @@ html{
 }
 body{
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Manrope', sans-serif;
     /* instalar fontes com o google API's para a proxima aula > manrope */
     color: var(--texto);
     background: radial-gradient(circle at top right, rgba(245,166,35,0.18),transparent 18%,linear-gradient(180deg, rgba(#f6fbfc 0%,#eef7f8 35%,#fff9f1 100%)));
@@ -570,6 +572,108 @@ code {
  }
 
  /* inicio terceira pagina medias */
- /* conteudo a ser construido conforme as instrucoes via canvas */
- /* aplicar script JS para gerar as demais paginas HTML5 > pagina 2 e 3 */
  /* nome: Alexander Fernandes  RA: 251070 | 05/05/2026  */
+
+    /* 8 - hero pagina 3 */
+    .hero-midias {
+        background: linear-gradient(135deg, rgba(7,59,76,0.92), rgba(235,111,77,0.55)),
+                    url('https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1600&q=80') center/cover;
+    }
+
+    /* 9 - grade de midias */
+    .grade-midias {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+
+    .bloco-midia {
+        background: var(--espuma);
+        border: 1px solid var(--borda);
+        border-radius: 20px;
+        padding: 1.5rem;
+        overflow: hidden;
+    }
+
+    .bloco-midia-largo {
+        grid-column: span 2;
+    }
+
+    .bloco-midia h3 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-family: 'Fraunces', sans-serif;
+        font-size: 1.35rem;
+        color: var(--oceano-profundo);
+    }
+
+    /* 10 - audio */
+    audio {
+        width: 100%;
+        margin: 0.8rem 0;
+        border-radius: 999px;
+        accent-color: var(--turquesa);
+    }
+
+    /* 11 - video e embed */
+    video {
+        width: 100%;
+        border-radius: 16px;
+        display: block;
+    }
+
+    .video-embed {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        border-radius: 16px;
+    }
+
+    .video-embed iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+    /* 12 - bloco de codigo */
+    .bloco-codigo {
+        background: var(--oceano-profundo);
+        color: #cfe8f0;
+        border-radius: 16px;
+        padding: 1.5rem;
+        font-family: consolas, monospace;
+        font-size: 0.88rem;
+        overflow-x: auto;
+        white-space: pre;
+        line-height: 1.7;
+    }
+
+    /* 13 - nota de midia */
+    .nota-midia {
+        border-left: 4px solid var(--turquesa);
+        padding: 0.9rem 1.2rem;
+        background: rgba(22, 166, 182, 0.08);
+        border-radius: 0 12px 12px 0;
+        margin: 1rem 0;
+    }
+
+    .nota-midia p {
+        margin: 0;
+        color: var(--oceano-profundo);
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    /* responsivo pagina 3 */
+    @media (max-width: 980px) {
+        .grade-midias {
+            grid-template-columns: 1fr;
+        }
+        .bloco-midia-largo {
+            grid-column: span 1;
+        }
+    }
